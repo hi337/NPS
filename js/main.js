@@ -1,6 +1,5 @@
 import * as THREE from "three";
 import { GLTFLoader } from "three/addons/loaders/GLTFLoader.js";
-import { OrbitControls } from "three/addons/controls/OrbitControls.js";
 
 const loader = new GLTFLoader();
 const parent_element = document.getElementById("chesspiece");
@@ -48,8 +47,8 @@ loader.load(
 );
 
 //camera positioning
-camera.position.set(110, 110, 110);
-camera.lookAt(0, 0, 0);
+camera.position.set(40, 100, 40);
+camera.lookAt(0, 60, 0);
 
 //light
 const directionalLight = new THREE.DirectionalLight(0xffffff, 1);

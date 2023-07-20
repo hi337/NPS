@@ -20,8 +20,6 @@ renderer.setSize(
 );
 parent_element.appendChild(renderer.domElement);
 
-// const controls = new OrbitControls(camera, renderer.domElement);
-
 let chesspiece;
 
 // loading the chess piece
@@ -61,7 +59,7 @@ scene.add(directionalLight);
 function animate() {
   requestAnimationFrame(animate);
 
-  chesspiece.rotation.y += 5;
+  chesspiece.rotation.y += 0.01;
 
   renderer.render(scene, camera);
 }

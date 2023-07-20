@@ -61,6 +61,8 @@ scene.add(directionalLight);
 function animate() {
   requestAnimationFrame(animate);
 
+  chesspiece.rotation.y += 5;
+
   renderer.render(scene, camera);
 }
 

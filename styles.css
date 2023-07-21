@@ -6,4 +6,33 @@
 .intro_text {
   color: white;
   text-align: center;
+  font-family: Aviatica;
+}
+
+.about_texts {
+  padding: 2rem;
+}
+
+/* Custom Scrollbar */
+        
+::-webkit-scrollbar {
+  width: 16px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 8px;
+  background-color: black;
+  border: 1px solid #cacaca;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+border: 3px solid transparent;
+ background-clip: content-box;
+  background-color: #f3d600;
+}
+
+@font-face {
+  font-family: Aviatica;
+  src: url(./fonts/Aviatica.ttf);
 }
